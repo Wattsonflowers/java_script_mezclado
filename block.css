@@ -1,0 +1,187 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #7f5003;
+    color: #000000;
+    padding: 20px;
+}
+
+
+h1 {
+    color: rgb(224, 169, 18);
+    text-align: center;
+    margin-bottom: 40px;
+}
+h2{
+    color: rgb(14, 13, 13); 
+    margin-bottom: 20px; 
+    text-align: center;  
+}
+p {
+    text-align: center;
+    color: #030d42;
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+
+nav {
+    background: #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+nav a {
+    color: rgb(239, 218, 112);
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a:hover {
+    color: #da4f0f;
+}
+
+
+section {   
+    margin: 20px 0;
+    padding: 20px;
+    border: 3px solid #174400;
+    background: #fcfa84;
+    border-radius: 6px;
+    box-shadow: 5px 4px 6px rgb(241, 207, 13);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+th {
+    background: #030d42;
+    color: #f7f7f7;
+    font-weight: 700;
+}
+
+
+.text-neon {
+    color: #dea711;
+    text-shadow:
+        0 0 5px #ecec15,
+        0 0 10px #df9115,
+        0 0 20px #c85d0c,
+        0 0 40px #000000;
+    transition: all 0.3s ease;
+}
+.text-neon:hover {
+    color: #f2d61e;
+    text-shadow:
+        0 0 10px #fda222,
+        0 0 20px #ee8f0b,
+        0 0 30px #d75610,
+        0 0 50px #000000;
+}
+
+
+.text-shine {
+  font-size: 50px;                 /* Tamaño */
+  font-weight: bold;               /* texto grueso */
+  background: linear-gradient(     /* degradado lineal */
+    90deg,                         /* Dirección horizontal*/
+    #fff 0%,                       /* Color blanco al inish */
+    #ffd700 25%,                   /* parte brillante*/
+    #fff 50%,                      /* Blanco ripet */
+    #ffd700 75%,                   /* dorado al finish */
+    #fff 100%                      /* fin */
+  );
+  -webkit-background-clip: text;   
+  color: transparent;              
+  background-size: 200%;           
+  animation: shine 3s linear infinite; 
+}
+
+
+@keyframes shine {
+  0% {
+    background-position: 200% center;  
+  }
+  100% {
+    background-position: -200% center; 
+  }
+}
+
+
+
+
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 600px;
+    background-color: rgb(238, 174, 129);
+    color: #000000;
+    box-shadow: rgb(239, 234, 69);
+    
+}
+fieldset {
+    border: 2px solid #444;
+    padding: 12px;
+    border-radius: 6px;
+    background: #fafafa;
+}
+button {
+    background: #000000;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #000000;
+}
+
+
+.sis415 { background-color: red; color: white; }
+.sis414 { background-color: blue; color: white; }
+.sis443 { background-color: rgb(255, 128, 93); color: rgb(255, 255, 255); }
+.sis421 { background-color: rgb(129, 36, 61); color: rgb(255, 255, 255); }
+.sis416 { background-color: rgb(8, 187, 8); color: white; }
+.sis420 { background-color: yellow; color: black; }
+
+
+@media (max-width: 700px) {
+    nav ul { 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    table { 
+        font-size: 14px; 
+    }
+}
+footer{
+    background-color: #533401;
+    color: #eeeef2;
+}
+.zoom:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(255, 227, 47);
+}
